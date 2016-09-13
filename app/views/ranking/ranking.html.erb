@@ -1,0 +1,11 @@
+<h1><%= @title %></h1>
+
+<ul>
+  <% @items.each.with_index(1) do |item, index| %>
+    <li>
+      <%= index %>
+      <%= image_tag item.medium_image %>
+      <%= link_to item.title, item %>
+    </li><br>
+  <% end %>
+</ul>
