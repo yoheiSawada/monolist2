@@ -70,6 +70,16 @@ item_ids = [5, 1, 2, 8, 3, 9, 10, 11, 4, 6, 7, 12]
 end
 user13.have(Item.find(3))
 
+item_ids = [8, 1, 2, 5, 3, 7, 4, 11, 10, 6, 12, 9]
+1.upto(12) do |user_id|
+  item_ids.each do |item_id|
+    eval("user#{user_id}").have(Item.find(item_id))
+  end
+  item_ids.pop
+end
+user13.want(Item.find(3))
+
+
 #1位(12) はじめてのBootstrap [ 槇俊明 ]
 #2位(11) パーフェクトRuby　on　Rails [ すがわらまさのり ]
 #3位(10) Ruby　on　Rails　4アプリケーションプログラミング／山田祥寛【2500円以上送料無料】
