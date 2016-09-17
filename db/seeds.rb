@@ -79,7 +79,7 @@ user13.have(Item.find(3))
   end
   item_ids.pop
 end
-user13.want(Item.find(5))
+user13.want(Item.find(3))
 
 
 #1位(12) はじめてのBootstrap [ 槇俊明 ]
