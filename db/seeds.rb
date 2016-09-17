@@ -61,6 +61,9 @@ user4.follow(user1)
 user4.follow(user2)
 user4.follow(user3)
 
+
+
+
 item_ids = [5, 1, 2, 8, 3, 9, 10, 11, 4, 6, 7, 12]
 1.upto(12) do |user_id|
   item_ids.each do |item_id|
@@ -70,7 +73,6 @@ item_ids = [5, 1, 2, 8, 3, 9, 10, 11, 4, 6, 7, 12]
 end
 user13.have(Item.find(3))
 
-item_ids = [8, 1, 2, 5, 3, 7, 4, 11, 10, 6, 12, 9]
 1.upto(12) do |user_id|
   item_ids.each do |item_id|
     eval("user#{user_id}").want(Item.find(item_id))
