@@ -73,11 +73,11 @@ user13.have(Item.find(3))
 item_ids = [8, 1, 2, 5, 3, 7, 4, 11, 10, 6, 12, 9]
 1.upto(12) do |user_id|
   item_ids.each do |item_id|
-    eval("user#{user_id}").have(Item.find(item_id))
+    eval("user#{user_id}").want(Item.find(item_id))
   end
   item_ids.pop
 end
-user13.want(Item.find(3))
+user13.want(Item.find(5))
 
 
 #1位(12) はじめてのBootstrap [ 槇俊明 ]
